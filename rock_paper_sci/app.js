@@ -7,6 +7,7 @@ let result = document.querySelector(".result")
 let userName = document.querySelector(".username")
 let uscore = document.querySelector(".uscore")
 let cscore = document.querySelector(".cscore")
+let tableName = document.querySelector(".uname");
 let comp = ["rock", "paper", "scissor"];
 
 let userScore = 0;
@@ -14,14 +15,17 @@ let computerScore = 0;
 rock.addEventListener("click", function(){
     game("rock", userName.value);
     user.textContent = "rock";
+    tableName.textContent = userName.value;
 })
 paper.addEventListener("click", function(){
     game("paper", userName.value);
     user.textContent = "paper";
+    tableName.textContent = userName.value;
 })
 scissor.addEventListener("click", function(){
     game("scissor", userName.value);
     user.textContent = "scissor";
+    tableName.textContent = userName.value;
 })
 function game(userInput, name)
 {
