@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+  border: 1px solid black;
+}
+th,td{
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+}
+</style>
+<body>
+    <h1>Rock Paper Scisssor</h1>
+    <div>
+        <label for="username">Enter your Name: </label>
+        <input type="text" class="username">
+        <h1>User : <span class="user"></span></h1>
+
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissor">Scissor</button>
+
+
+    </div>
+    <div>
+        <h1>Computer : <span class="computer"></span></h1>
+    </div>
+    <div style="width:40%">
+        <h1 class="result"></h1>
+        <table style="width:100%">
+            <tr>
+                <th>User</th>
+                <th>Computer</th>
+            </tr>
+            <tr>
+                <td class="uscore">0</td>
+                <td class="cscore">0</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
